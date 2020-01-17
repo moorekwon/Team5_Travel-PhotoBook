@@ -27,4 +27,12 @@ def index(request):
 
 
 def album_create(request):
-    pass
+
+    if request.method == 'POST':
+        book_name = request.POST['book_name']
+        author = request.user
+
+        PhotoBook.objects.create(book_name=book_name, author=author)
+        return redirect('page_1')
+
+    return render(request, 'create_photobook.html')
