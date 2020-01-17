@@ -11,8 +11,8 @@ class PhotoBook(models.Model):
     book_name = models.CharField(max_length=100, default='무제')
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     created_date = models.DateTimeField(auto_now_add=True)
-    start_date = models.DateTimeField(blank=True)
-    end_date = models.DateTimeField(blank=True)
+    start_date = models.DateTimeField(blank=True, null=True)
+    end_date = models.DateTimeField(blank=True, null=True)
 
 
 class Page(models.Model):
