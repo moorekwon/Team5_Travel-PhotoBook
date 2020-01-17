@@ -27,8 +27,4 @@ def index(request):
 
 
 def album_create(request):
-    author = request.user
-    PhotoBook.objects.create(
-        author=author,
-    )
-    return redirect('page_1')
+    pass
