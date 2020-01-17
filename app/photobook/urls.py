@@ -1,8 +1,8 @@
 from django.urls import path
 from photobook import views
-from photobook.views import index
 
 urlpatterns = [
-    path('', index, name='index'),
-    path('page_1/', views.page, name='page_1'),
+    path('', views.index, name='index'),
+    path('create/', views.album_create, name='album_create'),
+    path('page_1/', views.page_create, name='page_1'),
 ]
