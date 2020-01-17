@@ -17,7 +17,6 @@ class PhotoBook(models.Model):
 
 class Page(models.Model):
     book = models.ForeignKey(PhotoBook, on_delete=models.CASCADE)
-    pagenumber = models.PositiveIntegerField(auto_created=True)
 
 
 class Photo(models.Model):
