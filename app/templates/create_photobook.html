@@ -6,8 +6,19 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        * {
+            margin: 20px auto;
+            width: 500px;
+        }
+    </style>
 </head>
 <body>
-
+<form action="{% url 'album_create' %}" method="post">
+    {% csrf_token %}
+    <input type="text" name="book_name">
+    <img src="" alt="">
+    <button type="submit">생성</button>
+</form>
 </body>
 </html>
