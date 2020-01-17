@@ -22,4 +22,4 @@ class Page(models.Model):
 
 class Photo(models.Model):
     photo_page = models.ForeignKey(Page, on_delete=models.CASCADE)
-    # photo = models.ImageField(upload_to=)
+    photo = models.ImageField(upload_to='images/')
