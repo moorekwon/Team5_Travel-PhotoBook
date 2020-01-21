@@ -4,7 +4,6 @@ from members.models import User
 
 
 class PhotoBook(models.Model):
-
     class Meta:
         ordering = ['-created_date']
 

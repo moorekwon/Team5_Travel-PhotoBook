@@ -17,7 +17,7 @@ ROOT_DIR = os.path.dirname(BASE_DIR)
 TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 
 MEDIA_ROOT = os.path.join(ROOT_DIR, '.media')
-MEDIA_URL = '/mdeia/'
+MEDIA_URL = '/media/'
 STATIC_URL = '/static/'
 
 
